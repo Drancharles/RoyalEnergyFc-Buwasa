@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,6 +7,34 @@
   <meta name="description" content="Royal Energy FC Buwasa — official club website, fixtures, results, Group B and team news.">
   <title>Royal Energy FC | Buwasa</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    /* FIX 1: Header not covering headings */
+    html { scroll-behavior: smooth; }
+   .nav {
+      position: sticky;
+      top: 0;
+      z-index: 9999;
+    }
+    section[id] {
+      scroll-margin-top: 95px;
+    }
+    /* FIX 2: Make team photo sharp not blurry */
+   .photo-card img,
+   .gallery img {
+      width: 100%;
+      max-width: 650px;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+      object-fit: contain;
+      image-rendering: -webkit-optimize-contrast;
+      image-rendering: crisp-edges;
+      border-radius: 16px;
+    }
+   .gallery {
+      text-align: center;
+    }
+  </style>
 </head>
 <body>
 <header class="nav">
@@ -47,7 +76,7 @@
     <p>Royal Energy FC Buwasa — football, community and an unstoppable spirit.</p>
   </div>
   <div class="about-grid">
-    <div class="photo-card"><img src="https://i.postimg.cc/RNdG44f1/team.jpg" alt="Royal Energy FC players"></div>
+    <div class="photo-card"><img src="https://i.postimg.cc/RNdG44f1/team.jpg" alt="Royal Energy FC players" loading="lazy"></div>
     <div class="about-copy">
       <span class="tag">OUR HOME</span>
       <h3>ROYAL GROUNDZ KYANUUNA</h3>
@@ -158,7 +187,7 @@
     <p class="eyebrow">ROYAL MOMENTS</p>
     <h2>The Energy Boys</h2>
   </div>
-  <img src="https://i.postimg.cc/RNdG44f1/team.jpg" alt="Royal Energy FC team moment">
+  <img src="https://i.postimg.cc/RNdG44f1/team.jpg" alt="Royal Energy FC team moment" loading="lazy">
 </section>
 
 <section id="contact" class="section contact">
