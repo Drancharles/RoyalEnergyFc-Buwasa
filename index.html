@@ -47,12 +47,6 @@
 .whatsapp { background:#25D366; }
 .whatsapp-group { background:#128C7E; }
 .open-maps { display:inline-block; background:#fff; color:#1a73e8; padding:6px 12px; border-radius:6px; font-size:12px; font-weight:700; text-decoration:none; margin:8px; position:relative; z-index:2; box-shadow:0 2px 5px rgba(0,0,0,0.2); }
-  #subscribe-box{position:fixed;bottom:20px;right:20px;background:#0a0a0a;border:2px solid #ffd700;border-radius:16px;padding:18px;width:320px;z-index:99999;display:none;box-shadow:0 5px 20px rgba(0,0,0,0.5)}
-  #subscribe-box h3{color:#ffd700;margin:0 0 8px;font-size:16px}
-  #subscribe-box p{color:#fff;font-size:12px;margin:0 0 10px}
-  #subscribe-box input{width:100%;padding:10px;border-radius:8px;border:1px solid #333;background:#1a1a1a;color:#fff;margin-bottom:8px;box-sizing:border-box}
-  #subscribe-box button{width:100%;padding:12px;background:#25D366;color:#fff;border:none;border-radius:8px;font-weight:700;cursor:pointer}
-  #subscribe-btn{position:fixed;bottom:20px;right:20px;background:#ffd700;color:#000;padding:14px 22px;border-radius:30px;font-weight:800;z-index:99998;cursor:pointer;box-shadow:0 4px 12px rgba(0,0,0,0.3)}
   </style>
 </head>
 <body>
@@ -142,45 +136,6 @@
   <b style="color:#fff">⚡ ROYAL ENERGY FC BUWASA - WAKISO</b><br>Buwasa Village, Namayumba, Wakiso - Hoima Road<br>© 2026 Royal Energy FC Buwasa
 </footer>
 
-<!-- SUBSCRIBE - EVERYONE GETS ALL POSTS VIA WHATSAPP CHANNEL -->
-<div id="subscribe-btn" onclick="document.getElementById('subscribe-box').style.display='block'">🔔 Subscribe to Get Everything!</div>
-<div id="subscribe-box">
-  <span onclick="this.parentElement.style.display='none'" style="float:right;color:#fff;cursor:pointer;font-size:20px">✕</span>
-  <h3>⚡ Get Every Update!</h3>
-  <p style="color:#aaa;font-size:11px">Fixtures, Results, News straight to WhatsApp!</p>
-  <input type="text" id="fanName" placeholder="Your Name e.g. Musa">
-  <input type="tel" id="fanPhone" placeholder="WhatsApp No. e.g. 0702002257">
-  <button onclick="subscribeFan()">✅ Yes, Send Me Everything!</button>
-  <p id="subMsg" style="font-size:11px;margin-top:8px;display:none;text-align:center"></p>
-</div>
-
-<script>
-function subscribeFan(){
-  const name=document.getElementById('fanName').value.trim();
-  const phone=document.getElementById('fanPhone').value.trim();
-  const msg=document.getElementById('subMsg');
-  if(!name){alert('Enter your name');return;}
-  if(!phone || phone.length < 10){alert('Enter valid WhatsApp number');return;}
-
-  // Save locally for admin
-  localStorage.setItem('royalEnergySubscribed','yes');
-  let fans = JSON.parse(localStorage.getItem('allFans')||'[]');
-  fans.push({name, phone, date: new Date().toLocaleDateString()});
-  localStorage.setItem('allFans', JSON.stringify(fans));
-
-  msg.style.display='block';
-  msg.style.color='#25D366';
-  msg.innerHTML = `✅ Thanks ${name}!<br>Opening Channel...`;
-
-  setTimeout(()=>{
-    window.open('https://whatsapp.com/channel/0029Vb7eslH8vd1URgB8Wl31','_blank');
-    document.getElementById('subscribe-box').style.display='none';
-    alert(`✅ Welcome ${name}! Now Follow the Channel to get EVERY post we make!`);
-  },800);
-}
-setTimeout(()=>{if(!localStorage.getItem('royalEnergySubscribed')){document.getElementById('subscribe-box').style.display='block';}},4000);
-</script>
-
 <script src="script.js"></script>
 </body>
-    </html>
+                                                                                                                                                         </html>
