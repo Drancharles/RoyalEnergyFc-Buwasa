@@ -3,115 +3,140 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Royal Energy FC Buwasa</title>
+<title>Royal Energy FC Buwasa - Official</title>
 <link rel="icon" href="https://i.postimg.cc/DWgMNLgt/Royal-Energy-Dream-League-Showdown-1.png">
 <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700;900&display=swap" rel="stylesheet">
 <style>
 *{margin:0;padding:0;box-sizing:border-box;font-family:'Outfit',system-ui}
-:root{--green:#0a7a2f;--gold:#FFD700;--black:#060606}
-body{background:var(--black);color:#fff}
-.nav{position:sticky;top:0;z-index:9999;background:rgba(6,6,6,0.95);backdrop-filter:blur(20px);border-bottom:2px solid var(--gold);display:flex;justify-content:space-between;align-items:center;padding:10px 18px}
+:root{--gold:#FFD700;--gold2:#ffaa00;--green:#0a7a2f;--black:#050505;--card:#121212}
+body{background:var(--black);color:#fff;overflow-x:hidden}
+.nav{position:sticky;top:0;z-index:9999;background:rgba(5,5,5,0.96);backdrop-filter:blur(20px);border-bottom:2px solid var(--gold);display:flex;justify-content:space-between;align-items:center;padding:10px 18px}
 .brand{display:flex;align-items:center;gap:10px;text-decoration:none}
 .brand img{width:42px;height:42px;border-radius:50%;border:2px solid var(--gold)}
-.brand span{color:#fff;font-weight:900;font-size:15px}
-.nav nav a{color:#999;text-decoration:none;margin-left:18px;font-weight:700;font-size:12px}
-.hero{position:relative;min-height:auto;padding:28px 20px 44px;text-align:center;background:radial-gradient(900px 500px at 50% -20%, rgba(255,215,0,0.28), rgba(10,122,47,0.22) 35%, transparent 70%), #050505}
-.hero-content{max-width:600px;margin:0 auto}
-.eyebrow{display:inline-block;background:rgba(255,215,0,0.12);border:1px solid rgba(255,215,0,0.35);color:var(--gold);padding:6px 14px;border-radius:20px;letter-spacing:3px;font-size:9px;font-weight:900;margin-bottom:18px}
-.hero-logo{margin:8px auto 14px}
-.hero-logo img{width:155px;height:155px;border-radius:50%;border:3px solid var(--gold);box-shadow:0 0 0 8px rgba(255,215,0,0.1), 0 0 55px rgba(255,215,0,0.6);background:#000;object-fit:cover;animation:float 4s ease-in-out infinite;display:block;margin:0 auto}
-@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-7px)}}
-.hero h1{font-size:56px;line-height:0.85;font-weight:900;margin:10px 0}
-.hero h1 b{color:#fff;display:block}
-.hero h1 span{background:linear-gradient(180deg, #FFD700, #ff9d00);-webkit-background-clip:text;-webkit-text-fill-color:transparent;display:block;font-size:52px}
-.lead{color:#aaa;font-size:13px;margin:12px auto 22px;max-width:380px;line-height:1.5}
-.btn{padding:14px 26px;border-radius:30px;text-decoration:none;font-weight:900;font-size:13px;display:inline-block;min-width:150px;margin:4px}
+.brand span{color:#fff;font-weight:900;font-size:14px;line-height:1.1}
+.nav nav a{color:#888;text-decoration:none;margin-left:18px;font-weight:700;font-size:12px}
+.nav nav a:hover{color:var(--gold)}
+
+/* HERO - LOGO + NAME SAME LINE - BEAUTIFUL */
+.hero{padding:40px 18px 44px;text-align:center;background:radial-gradient(900px 500px at 50% 0%, rgba(255,215,0,0.25), rgba(10,122,47,0.20) 40%, transparent 70%), #050505}
+.eyebrow{display:inline-block;background:rgba(255,215,0,0.12);border:1px solid rgba(255,215,0,0.35);color:var(--gold);padding:7px 16px;border-radius:20px;letter-spacing:3px;font-size:9px;font-weight:900;margin-bottom:26px}
+/* SAME LINE */
+.hero-title-row{display:flex;align-items:center;justify-content:center;gap:18px;margin:0 auto 12px;flex-wrap:nowrap}
+.hero-logo img{width:110px;height:110px;border-radius:50%;border:3px solid var(--gold);box-shadow:0 0 0 6px rgba(255,215,0,0.12), 0 0 40px rgba(255,215,0,0.55);background:#000;object-fit:cover;animation:float 4s ease-in-out infinite;flex-shrink:0}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
+.hero-title{text-align:left;line-height:0.9}
+.hero-title b{color:#fff;font-size:46px;font-weight:900;display:block;letter-spacing:-1px}
+.hero-title span{font-size:46px;font-weight:900;display:block;background:linear-gradient(180deg, #FFD700, #ff8c00);-webkit-background-clip:text;-webkit-text-fill-color:transparent;letter-spacing:-1px}
+.lead{color:#999;font-size:13px;margin:14px auto 22px;max-width:400px;line-height:1.5}
+.btn{padding:14px 28px;border-radius:30px;text-decoration:none;font-weight:900;font-size:13px;display:inline-block;min-width:150px;margin:5px;transition:0.3s}
 .btn.primary{background:var(--gold);color:#000;box-shadow:0 8px 24px rgba(255,215,0,0.4)}
 .btn.ghost{border:2px solid var(--gold);color:var(--gold)}
-.score-card{margin:24px auto 0;background:rgba(255,255,255,0.06);border:1px solid rgba(255,215,0,0.25);border-radius:18px;padding:14px;max-width:370px}
-.score-card small{color:var(--gold);letter-spacing:3px;font-size:9px;font-weight:900}
-.score-card strong{color:#fff;display:block;margin:6px 0;font-size:15px}
-.score-card strong b{color:var(--gold);font-size:19px}
-.score-card span{color:#777;font-size:11px}
-.section{padding:42px 16px}.section.dark{background:#0a0a0a;border-top:1px solid #1a1a1a;border-bottom:1px solid #1a1a1a}
-.section-head{text-align:center;max-width:700px;margin:0 auto 28px}.section-head h2{font-size:32px;font-weight:900}
-.about-grid,.contact,.bottom-grid{display:grid;gap:20px;max-width:1100px;margin:0 auto}
-.about-grid{grid-template-columns:1.1fr 0.9fr}.contact{grid-template-columns:1fr 1fr 1fr}.bottom-grid{grid-template-columns:1fr 1fr}
-.photo-card{background:#111;border-radius:18px;padding:7px;border:1px solid #1e1e1e}.photo-card img{width:100%;border-radius:12px}
-.tag{background:var(--gold);color:#000;padding:5px 12px;border-radius:20px;font-size:10px;font-weight:900}
-.fixture-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:14px;max-width:1100px;margin:0 auto}
-.fixture{background:linear-gradient(180deg, #151515, #0e0e0e);border:1px solid #1e1e1e;border-radius:16px;padding:16px;position:relative}
-.fixture:before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--gold),var(--green))}
-.match-no{color:var(--gold);font-size:10px;font-weight:900;letter-spacing:2px}.date{color:#555;font-size:11px;margin:4px 0 8px}
-.result{background:var(--gold);color:#000;padding:6px 12px;border-radius:20px;font-size:11px;font-weight:900;display:inline-block;margin-top:10px}
-.kick{background:#000;color:var(--gold);border:1px solid var(--gold);padding:6px 12px;border-radius:20px;font-size:11px;font-weight:900;display:inline-block;margin-top:10px}
-.contact-card,.media-card{background:#111;border:1px solid #1e1e1e;border-radius:16px;padding:18px;border-left:3px solid var(--gold)}
+.btn:hover{transform:translateY(-2px)}
+.score-card{margin:26px auto 0;background:linear-gradient(135deg, rgba(255,255,255,0.08), rgba(255,255,255,0.02));border:1px solid rgba(255,215,0,0.25);border-radius:18px;padding:14px;max-width:360px}
+
+/* SECTION */
+.section{padding:44px 16px}
+.section.dark{background:#0a0a0a;border-top:1px solid #1a1a1a;border-bottom:1px solid #1a1a1a}
+.section-head{text-align:center;max-width:700px;margin:0 auto 30px}
+.section-head h2{font-size:32px;font-weight:900}
+.section-head h2:after{content:'';display:block;width:50px;height:4px;background:linear-gradient(90deg,var(--gold),var(--green));margin:12px auto 0;border-radius:10px}
+
+/* BEAUTIFUL FIXTURES - PREMIER LEAGUE STYLE */
+.fixture-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:18px;max-width:1100px;margin:0 auto}
+.match-card{background:linear-gradient(180deg, #171717, #0f0f0f);border:1px solid #222;border-radius:20px;overflow:hidden;position:relative;transition:0.35s}
+.match-card:hover{transform:translateY(-5px);border-color:var(--gold);box-shadow:0 15px 40px rgba(255,215,0,0.15)}
+.match-card.next{border:1.5px solid var(--gold);background:linear-gradient(180deg, #1c1900, #121200);box-shadow:0 0 30px rgba(255,215,0,0.18)}
+.match-card.done{border-color:rgba(255,215,0,0.4)}
+.match-top{display:flex;justify-content:space-between;align-items:center;padding:12px 16px;background:rgba(255,255,255,0.03);border-bottom:1px solid #1e1e1e}
+.match-no{color:var(--gold);font-size:9px;font-weight:900;letter-spacing:2px}
+.match-date{color:#666;font-size:10px;font-weight:700;background:#000;padding:4px 10px;border-radius:20px;border:1px solid #222}
+.match-body{padding:18px 16px;text-align:center}
+.teams{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-bottom:12px}
+.team{flex:1;text-align:center}
+.team-logo{width:48px;height:48px;border-radius:50%;background:#000;border:2px solid #222;margin:0 auto 6px;display:flex;align-items:center;justify-content:center;font-size:20px}
+.team-name{font-size:12px;font-weight:800;color:#fff;line-height:1.1}
+.vs{width:36px;height:36px;background:var(--gold);color:#000;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:11px;flex-shrink:0;box-shadow:0 0 15px rgba(255,215,0,0.4)}
+.match-info{color:#777;font-size:11px;margin-top:4px}
+.match-footer{padding:10px 16px;background:#000;display:flex;justify-content:center}
+.badge{padding:6px 14px;border-radius:20px;font-size:10px;font-weight:900;letter-spacing:1px}
+.badge.win{background:var(--gold);color:#000}
+.badge.home{background:#000;color:var(--gold);border:1px solid var(--gold);box-shadow:0 0 12px rgba(255,215,0,0.3)}
+.badge.away{background:#111;color:#888;border:1px solid #222}
+
+/* OTHER */
+.about-grid{display:grid;grid-template-columns:1.1fr 0.9fr;gap:20px;max-width:1100px;margin:0 auto;align-items:center}
+.photo-card{background:#111;border-radius:18px;padding:7px;border:1px solid #1e1e1e}
+.photo-card img{width:100%;border-radius:12px}
+.contact{display:grid;grid-template-columns:1fr 1fr 1fr;gap:14px;max-width:1100px;margin:0 auto}
+.contact-card{background:#111;border:1px solid #1e1e1e;border-radius:16px;padding:18px;border-left:3px solid var(--gold)}
 .bottom-section{background:#000;border-top:3px solid var(--gold);padding:36px 16px}
+.bottom-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px;max-width:1100px;margin:0 auto}
 .map-compact{border-radius:16px;overflow:hidden;border:1.5px solid var(--gold);height:250px;margin-top:12px}
 .map-compact iframe{width:100%;height:100%;border:0}
 .social-btn{padding:13px 16px;border-radius:12px;text-decoration:none;font-weight:800;font-size:13px;color:#fff;display:flex;justify-content:center;background:#111;border:1px solid #222}
-.open-maps{background:var(--gold);color:#000;padding:7px 12px;border-radius:8px;font-weight:900;font-size:11px;text-decoration:none;position:absolute;top:8px;left:8px;z-index:2}
-@media(max-width:800px){.about-grid,.contact,.bottom-grid{grid-template-columns:1fr}.hero h1{font-size:44px}.hero h1 span{font-size:42px}}
+
+@media(max-width:650px){
+.hero-title-row{gap:14px}
+.hero-logo img{width:85px;height:85px}
+.hero-title b{font-size:34px}
+.hero-title span{font-size:34px}
+.about-grid,.contact,.bottom-grid{grid-template-columns:1fr}
+}
 </style>
 </head>
 <body>
 <header class="nav">
-<a class="brand" href="#home"><img src="https://i.postimg.cc/DWgMNLgt/Royal-Energy-Dream-League-Showdown-1.png"><span>ROYAL ENERGY FC</span></a>
-<nav><a href="#home">Home</a><a href="#club">Club</a><a href="#fixtures">Fixtures</a><a href="#contact">Contact</a></nav>
+<a class="brand" href="#home"><img src="https://i.postimg.cc/DWgMNLgt/Royal-Energy-Dream-League-Showdown-1.png"><span>ROYAL<br>ENERGY<br>FC</span></a>
+<nav><a href="#home">Home</a><a href="#club">Club</a><a href="#fixtures">Fixtures</a></nav>
 </header>
 
 <section class="hero">
-<div class="hero-content">
-<!-- ORDER FIXED: eyebrow FIRST, then logo in middle -->
 <span class="eyebrow">S. FOUNDATION DREAM LEAGUE 2026 - WAKISO</span>
+
+<!-- LOGO + NAME SAME LINE -->
+<div class="hero-title-row">
 <div class="hero-logo"><img src="https://i.postimg.cc/DWgMNLgt/Royal-Energy-Dream-League-Showdown-1.png" alt="Royal Energy"></div>
-<h1><b>ROYAL</b><span>ENERGY FC</span></h1>
+<div class="hero-title">
+<b>ROYAL</b>
+<span>ENERGY FC</span>
+</div>
+</div>
+
 <p class="lead">Buwasa Village, Namayumba Town Council, Wakiso District - Hoima Road</p>
 <div><a class="btn primary" href="#fixtures">View Fixtures</a><a class="btn ghost" href="#bottom">Find Us</a></div>
-<div class="score-card"><small>LAST RESULT</small><strong>BUKONDO FC <b>2</b> — <b>3</b> ROYAL ENERGY FC</strong><span>🏆 Dream League Group B</span></div>
-</div>
+<div class="score-card"><small style="color:var(--gold);letter-spacing:3px;font-size:9px;font-weight:900">LAST RESULT</small><br><strong style="color:#fff;font-size:15px;margin:6px 0;display:block">BUKONDO FC <b style="color:var(--gold)">2</b> — <b style="color:var(--gold)">3</b> ROYAL ENERGY FC</strong><span style="color:#777;font-size:11px">🏆 Dream League Group B - WIN</span></div>
 </section>
 
 <section class="section">
 <div class="section-head"><p style="color:var(--gold);letter-spacing:3px;font-size:10px;font-weight:900">THE ENERGY BOYS</p><h2>Welcome to Royal Kingdom</h2></div>
 <div class="about-grid">
 <div class="photo-card"><img src="./images/team-hd.jpg"></div>
-<div><span class="tag">OUR HOME</span><h3 style="color:var(--gold);font-size:22px;margin:10px 0 6px">ROYAL GROUNDZ KYANUUNA</h3><p style="color:#999;font-size:13px">Fortress in Buwasa Village, Namayumba, Wakiso.</p></div>
+<div><span style="background:var(--gold);color:#000;padding:5px 12px;border-radius:20px;font-size:10px;font-weight:900">OUR HOME</span><h3 style="color:var(--gold);font-size:22px;margin:10px 0 6px">ROYAL GROUNDZ KYANUUNA</h3><p style="color:#999;font-size:13px">Fortress in Buwasa Village, Namayumba, Wakiso.</p></div>
 </div>
 </section>
 
-<section class="section dark">
-<div class="section-head"><p style="color:var(--gold);letter-spacing:3px;font-size:10px;font-weight:900">DREAM LEAGUE</p><h2>Group B Fixtures</h2></div>
+<!-- BEAUTIFUL FIXTURES -->
+<section id="fixtures" class="section dark">
+<div class="section-head"><p style="color:var(--gold);letter-spacing:3px;font-size:10px;font-weight:900">DREAM LEAGUE</p><h2>Group B Fixtures</h2><p style="color:#666;font-size:13px;margin-top:8px">S. Foundation Dream League 2026</p></div>
 <div class="fixture-grid">
-<article class="fixture" style="border-color:rgba(255,215,0,0.4)"><span class="match-no">MATCH 1 ✓</span><div class="date">12 SEP 2026</div><h3>BUKONDO FC vs ROYAL ENERGY FC</h3><b class="result">FT 2 — 3 WIN ⚡</b></article>
-<article class="fixture" style="border-color:var(--gold)"><span class="match-no">MATCH 2 - NEXT</span><div class="date">27 SEP 2026 - 4:00 PM</div><h3>ROYAL ENERGY FC vs LUKOMA FC</h3><b class="kick">🔥 HOME GAME</b></article>
-<article class="fixture"><span class="match-no">MATCH 3</span><div class="date">17 OCT 2026</div><h3>UNITED SPARROWS vs ROYAL ENERGY FC</h3></article>
-<article class="fixture"><span class="match-no">MATCH 4</span><div class="date">31 OCT 2026</div><h3>UNITED SPARROWS vs ROYAL ENERGY FC</h3></article>
-<article class="fixture"><span class="match-no">MATCH 5</span><div class="date">15 NOV 2026</div><h3>ROYAL ENERGY FC vs BUKONDO FC</h3></article>
-<article class="fixture"><span class="match-no">MATCH 6</span><div class="date">21 NOV 2026</div><h3>LUKOMA FC vs ROYAL ENERGY FC</h3></article>
-</div>
-</section>
 
-<section id="bottom" class="bottom-section">
-<div class="bottom-grid">
-<div>
-<p style="color:var(--gold);letter-spacing:3px;font-size:10px;font-weight:900">FIND US</p>
-<h3 style="color:#fff;font-size:20px;font-weight:900;margin:6px 0">Royal Groundz Kyanuuna</h3>
-<p style="color:#777;font-size:13px">Buwasa Village, Wakiso - Hoima Road, 26KM from Kampala</p>
-<div class="map-compact" style="position:relative"><a class="open-maps" href="https://www.google.com/maps/search/?api=1&query=Royal+Energy+Ltd+Uganda+Namayumba" target="_blank">Open in Maps ↗</a><iframe src="https://www.google.com/maps?q=Royal+Energy+Ltd+Uganda+Namayumba+Wakiso&z=15&output=embed"></iframe></div>
+<!-- MATCH 1 DONE -->
+<div class="match-card done">
+<div class="match-top"><span class="match-no">MATCH 1 • FT</span><span class="match-date">12 SEP 2026</span></div>
+<div class="match-body">
+<div class="teams">
+<div class="team"><div class="team-logo">🔵</div><div class="team-name">BUKONDO FC</div></div>
+<div class="vs">2-3</div>
+<div class="team"><div class="team-logo" style="border-color:var(--gold)">⚡</div><div class="team-name" style="color:var(--gold)">ROYAL ENERGY</div></div>
 </div>
-<div>
-<p style="color:var(--gold);letter-spacing:3px;font-size:10px;font-weight:900">FOLLOW US</p>
-<h3 style="color:#fff;font-size:20px;font-weight:900;margin:6px 0 14px">Follow The Energy Boys</h3>
-<div style="display:flex;flex-direction:column;gap:10px">
-<a class="social-btn" href="https://tiktok.com/@royalenergyfc_buwasa1" target="_blank">🎵 TikTok</a>
-<a class="social-btn" href="https://youtube.com/@royalenergy_buwasa" target="_blank">▶️ YouTube</a>
-<a class="social-btn" href="https://whatsapp.com/channel/0029Vb7eslH8vd1URgB8Wl31" target="_blank">💬 WhatsApp Channel</a>
-<a class="social-btn" href="https://chat.whatsapp.com/DQvOXID1PKb1B6Uo8eu74V" target="_blank">👥 WhatsApp Group</a>
+<div class="match-info">📍 Bukondo Ground • Dream League Group B</div>
 </div>
+<div class="match-footer"><span class="badge win">WIN ⚡ +3 POINTS</span></div>
 </div>
-</div>
-</section>
-<footer style="text-align:center;padding:20px;background:#000;color:#444;font-size:11px;border-top:1px solid #111"><b style="color:var(--gold)">⚡ ROYAL ENERGY FC BUWASA</b><br>© 2026</footer>
-</body>
-                                                                           </html>
+
+<!-- MATCH 2 NEXT - BEAUTIFUL -->
+<div class="match-card next">
+<div class="match-top"><span class="match-no" style="color:#000;background:var(--gold);padding:3px 8px;border-radius:10px">NEXT MATCH • HOME</span><span class="match-date" style="color:var(--gold);border-color:var(--gold)">27 SEP • 4:00 PM</span></div>
+<div class="match-body">
+<div class="teams">
+<div class="team"><div class="team-logo" style="border-color:var(--gold);background:
