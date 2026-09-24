@@ -15,12 +15,9 @@ body{background:var(--black);color:#fff;overflow-x:hidden}
 .brand{display:flex;align-items:center;gap:8px;text-decoration:none;color:#fff;font-weight:900;font-size:13px}
 .brand img{width:42px;height:42px;border-radius:50%;border:2px solid var(--gold)}
 .nav nav a{color:#aaa;text-decoration:none;margin-left:14px;font-size:12px;font-weight:700}
-
-/* HERO - GOOD BACKGROUND - NO TOP SPACE */
-.hero{padding:16px 16px 36px!important;text-align:center;background:radial-gradient(900px 500px at 50% -10%, rgba(255,215,0,0.28), transparent 60%),radial-gradient(700px 400px at 10% 20%, rgba(10,122,47,0.35), transparent 50%),linear-gradient(180deg, #0b1f12 0%, #050505 100%)!important;position:relative}
+.hero{padding:16px 16px 36px;text-align:center;background:radial-gradient(900px 500px at 50% -10%, rgba(255,215,0,0.28), transparent 60%),radial-gradient(700px 400px at 10% 20%, rgba(10,122,47,0.35), transparent 50%),linear-gradient(180deg, #0b1f12 0%, #050505 100%);position:relative}
 .hero-content{max-width:600px;margin:0 auto;position:relative;z-index:2}
 .eyebrow{display:inline-block;background:linear-gradient(90deg, rgba(255,215,0,0.15), rgba(10,122,47,0.15));border:1px solid rgba(255,215,0,0.35);color:var(--gold);padding:7px 16px;border-radius:20px;font-size:9px;letter-spacing:2px;font-weight:900;margin:0 0 18px 0}
-/* LOGO + NAME SAME LINE */
 .hero-row{display:flex;align-items:center;justify-content:center;gap:16px;margin:0 auto 10px}
 .hero-logo img{width:98px;height:98px;border-radius:50%;border:3px solid var(--gold);box-shadow:0 0 0 6px rgba(255,215,0,0.12), 0 0 45px rgba(255,215,0,0.55);background:#000;object-fit:cover}
 .hero-row h1{font-size:38px;line-height:0.85;font-weight:900;text-align:left;margin:0}
@@ -31,18 +28,15 @@ body{background:var(--black);color:#fff;overflow-x:hidden}
 .btn.primary{background:linear-gradient(180deg, #FFD700, #ffb700);color:#000;box-shadow:0 8px 24px rgba(255,215,0,0.4)}
 .btn.ghost{border:2px solid var(--gold);color:var(--gold)}
 .score-card{margin:20px auto 0;background:rgba(255,255,255,0.06);border:1px solid rgba(255,215,0,0.28);border-radius:18px;padding:12px;max-width:340px}
-
-/* SECTIONS */
 .section{padding:40px 14px;background:#050505}
 .section.dark{background:radial-gradient(600px 300px at 20% 0%, rgba(10,122,47,0.12), transparent 70%),#0a0a0a;border-top:1px solid #1a1a1a;border-bottom:1px solid #1a1a1a}
 .section-head{text-align:center;max-width:700px;margin:0 auto 26px}
 .section-head h2{font-size:28px;font-weight:900}
 .photo-card{background:#141414;border-radius:18px;padding:7px;border:1px solid #222}
-.photo-card img{width:100%;border-radius:12px;display:block;object-fit:contain;max-height:500px}
+.photo-card img{width:100%;border-radius:12px;display:block;object-fit:cover;max-height:520px}
 .kit-label{text-align:center;font-weight:900;margin-top:10px;color:var(--gold);font-size:12px;letter-spacing:1px}
 .about-grid{display:grid;grid-template-columns:1.1fr 0.9fr;gap:18px;max-width:1100px;margin:0 auto;align-items:center}
-
-/* FIXTURES - BEAUTIFUL NO SYMBOLS */
+.team-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;max-width:1100px;margin:20px auto 0}
 .fixture-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:14px;max-width:1100px;margin:0 auto}
 .fixture{background:#161616;border:1px solid #222;border-radius:18px;overflow:hidden;transition:0.3s}
 .fixture:hover{transform:translateY(-3px);border-color:var(--gold)!important}
@@ -56,8 +50,6 @@ body{background:var(--black);color:#fff;overflow-x:hidden}
 .result,.kick{display:block;margin:10px auto;text-align:center;width:fit-content;padding:6px 16px;border-radius:20px;font-size:11px;font-weight:900}
 .result{background:var(--gold);color:#000}
 .kick{background:#000;color:var(--gold);border:1px solid var(--gold)}
-
-/* BOTTOM - STACKED ON MOBILE */
 .bottom-section{background:linear-gradient(180deg, #080f09, #000);border-top:3px solid var(--gold);padding:30px 15px}
 .bottom-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;max-width:1100px;margin:0 auto}
 .map-compact{border-radius:14px;overflow:hidden;border:1.5px solid var(--gold);margin-top:10px;height:230px}
@@ -65,11 +57,9 @@ body{background:var(--black);color:#fff;overflow-x:hidden}
 .social-btn{display:flex;justify-content:center;align-items:center;gap:8px;padding:12px 18px;border-radius:30px;text-decoration:none;font-weight:700;font-size:13px;color:#fff}
 .tiktok{background:#111;border:1px solid #333}.youtube{background:#c40000}.whatsapp{background:#1a8c3f}.whatsapp-group{background:#0f6b31}
 .open-maps{display:inline-block;background:#fff;color:#1a73e8;padding:6px 12px;border-radius:6px;font-size:12px;font-weight:700;text-decoration:none;margin:8px;position:relative;z-index:2}
-
 @media(max-width:700px){
 .bottom-grid{grid-template-columns:1fr!important;gap:32px!important}
-.about-grid{grid-template-columns:1fr}
-.hero{padding:12px 14px 28px!important}
+.about-grid,.team-grid{grid-template-columns:1fr}
 .hero-logo img{width:80px!important;height:80px!important}
 .hero-row h1{font-size:30px!important}
 .kit-grid{grid-template-columns:1fr!important}
@@ -98,14 +88,19 @@ body{background:var(--black);color:#fff;overflow-x:hidden}
 <section class="section">
 <div class="section-head"><p style="color:var(--gold);letter-spacing:3px;font-size:10px;font-weight:900">THE ENERGY BOYS</p><h2>Welcome to Royal Kingdom</h2></div>
 <div class="about-grid">
-<div class="photo-card"><img src="./images/team-hd.jpg" alt="Team"></div>
-<div><span style="background:var(--gold);color:#000;padding:5px 12px;border-radius:20px;font-size:10px;font-weight:900">OUR HOME</span><h3 style="color:var(--gold);font-size:22px;margin:10px 0 6px">ROYAL GROUNDZ KYANUUNA</h3><p style="color:#999;font-size:13px;line-height:1.5">Fortress in Buwasa Village, Namayumba, Wakiso.</p></div>
+<div class="photo-card"><img src="https://i.postimg.cc/W4Tw410B/IMG-20260924-WA0874.jpg" alt="Royal Energy Team" loading="eager"></div>
+<div><span style="background:var(--gold);color:#000;padding:5px 12px;border-radius:20px;font-size:10px;font-weight:900">OUR HOME</span><h3 style="color:var(--gold);font-size:22px;margin:10px 0 6px">ROYAL GROUNDZ KYANUUNA</h3><p style="color:#999;font-size:13px;line-height:1.5">Fortress in Buwasa Village, Namayumba, Wakiso. Home of The Energy Boys.</p></div>
 </div>
 
-<div class="section-head" style="margin-top:40px"><p style="color:var(--gold);letter-spacing:3px;font-size:10px;font-weight:900">OFFICIAL KITS</p><h2>Our Kits 2026</h2></div>
+<div class="team-grid">
+<div class="photo-card"><img src="https://i.postimg.cc/DWgMNLgt/Royal-Energy-Dream-League-Showdown-1.png" style="object-fit:contain;background:#000;padding:20px" alt="Club Logo"><p class="kit-label">CLUB BADGE</p></div>
+<div class="photo-card"><img src="https://i.postimg.cc/W4Tw410B/IMG-20260924-WA0874.jpg" alt="Team Squad"><p class="kit-label">SQUAD 2026 - LIME GREEN KIT</p></div>
+</div>
+
+<div class="section-head" style="margin-top:40px"><p style="color:var(--gold);letter-spacing:3px;font-size:10px;font-weight:900">OFFICIAL KITS - FIXED</p><h2>Our Kits 2026</h2></div>
 <div class="kit-grid" style="display:grid;grid-template-columns:1fr 1fr;gap:14px;max-width:800px;margin:0 auto">
-<div class="photo-card"><img src="https://i.postimg.cc/9FFNF1Yr/IMG-20260924-WA9341.jpg" alt="Home Kit"><p class="kit-label">HOME KIT - YELLOW</p></div>
-<div class="photo-card"><img src="https://i.postimg.cc/d3XdFq9L/IMG-20260924-WA3548.jpg" alt="Away Kit"><p class="kit-label">AWAY KIT - RED</p></div>
+<div class="photo-card"><img src="https://i.postimg.cc/9FFNF1Yr/IMG-20260924-WA9341.jpg" alt="Home Kit Yellow Green" loading="lazy"><p class="kit-label">HOME KIT - YELLOW / GREEN</p></div>
+<div class="photo-card"><img src="https://i.postimg.cc/d3XdFq9L/IMG-20260924-WA3548.jpg" alt="Away Kit Lime Green" loading="lazy"><p class="kit-label">AWAY KIT - LIME GREEN</p></div>
 </div>
 </section>
 
