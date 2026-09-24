@@ -8,14 +8,14 @@
 <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700;900&display=swap" rel="stylesheet">
 <style>
 *{margin:0;padding:0;box-sizing:border-box;font-family:'Outfit',system-ui}
-:root{--gold:#FFD700;--green:#0a7a2f;--bg:#0f1f13;--bg2:#122816;--bg3:#0b1a0f}
+:root{--gold:#FFD700;--bg:#0f1f13;--bg3:#0b1a0f}
 html{scroll-behavior:smooth}
 body{background:var(--bg);color:#fff;overflow-x:hidden}
 .nav{position:sticky;top:0;z-index:9999;background:rgba(12,30,16,0.97);backdrop-filter:blur(20px);border-bottom:2px solid var(--gold);display:flex;justify-content:space-between;align-items:center;padding:10px 16px}
 .brand{display:flex;align-items:center;gap:8px;text-decoration:none;color:#fff;font-weight:900;font-size:13px}
 .brand img{width:42px;height:42px;border-radius:50%;border:2px solid var(--gold)}
 .nav nav a{color:#c5d6c8;text-decoration:none;margin-left:14px;font-size:12px;font-weight:700}
-.hero{padding:16px 16px 36px;text-align:center;background:radial-gradient(900px 500px at 50% -10%, rgba(255,215,0,0.28), transparent 60%),radial-gradient(700px 400px at 10% 20%, rgba(10,122,47,0.35), transparent 50%),linear-gradient(180deg, #172e1c 0%, var(--bg) 100%)}
+.hero{padding:16px 16px 36px;text-align:center;background:radial-gradient(900px 500px at 50% -10%, rgba(255,215,0,0.28), transparent 60%),linear-gradient(180deg, #172e1c 0%, var(--bg) 100%)}
 .hero-content{max-width:600px;margin:0 auto}
 .eyebrow{display:inline-block;background:rgba(255,215,0,0.15);border:1px solid rgba(255,215,0,0.35);color:var(--gold);padding:7px 16px;border-radius:20px;font-size:9px;letter-spacing:2px;font-weight:900;margin:0 0 18px 0}
 .hero-row{display:flex;align-items:center;justify-content:center;gap:16px;margin:0 auto 10px}
@@ -25,18 +25,18 @@ body{background:var(--bg);color:#fff;overflow-x:hidden}
 .hero-row h1 span{color:var(--gold);display:block;background:linear-gradient(180deg, #FFD700, #ffb700);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
 .lead{color:#a8c0ae;font-size:13px;margin:10px auto 18px;max-width:360px}
 .btn{padding:12px 24px;border-radius:30px;text-decoration:none;font-weight:900;font-size:13px;display:inline-block;margin:4px}
-.btn.primary{background:linear-gradient(180deg, #FFD700, #ffb700);color:#000;box-shadow:0 8px 24px rgba(255,215,0,0.4)}
+.btn.primary{background:linear-gradient(180deg, #FFD700, #ffb700);color:#000}
 .btn.ghost{border:2px solid var(--gold);color:var(--gold)}
 .score-card{margin:20px auto 0;background:rgba(255,255,255,0.06);border:1px solid rgba(255,215,0,0.28);border-radius:18px;padding:12px;max-width:340px}
 .section{padding:40px 14px;background:var(--bg)}
-.section.dark{background:radial-gradient(600px 300px at 20% 0%, rgba(10,122,47,0.18), transparent 70%),var(--bg3);border-top:1px solid #1f3a23;border-bottom:1px solid #1f3a23}
+.section.dark{background:var(--bg3);border-top:1px solid #1f3a23;border-bottom:1px solid #1f3a23}
 .section-head{text-align:center;max-width:700px;margin:0 auto 26px}
 .section-head h2{font-size:28px;font-weight:900}
 .photo-card{background:#1a2f1e;border-radius:18px;padding:7px;border:1px solid #2a4a2e}
 .photo-card img{width:100%;border-radius:12px;display:block;object-fit:cover;min-height:200px;background:#0a1a0f}
 .kit-label{text-align:center;font-weight:900;margin-top:10px;color:var(--gold);font-size:12px;letter-spacing:1px}
 .about-grid{display:grid;grid-template-columns:1.1fr 0.9fr;gap:18px;max-width:1100px;margin:0 auto;align-items:center}
-.team-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;max-width:1100px;margin:20px auto 0}
+.team-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;max-width:1100px;margin:0 auto}
 .fixture-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:14px;max-width:1100px;margin:0 auto}
 .fixture{background:#172b1a;border:1px solid #2d4a30;border-radius:18px;overflow:hidden}
 .fixture.next{border:1.5px solid var(--gold)!important;background:linear-gradient(180deg,#2a2400,#1a1f12)!important}
@@ -81,24 +81,22 @@ body{background:var(--bg);color:#fff;overflow-x:hidden}
 <section class="section">
 <div class="section-head"><p style="color:var(--gold);letter-spacing:3px;font-size:10px;font-weight:900">THE ENERGY BOYS</p><h2>Welcome to Royal Kingdom</h2></div>
 
-<!-- 1. HOME GROUND -->
+<!-- 1. TEAM PHOTOS - NEW LINKS -->
 <div class="about-grid">
-<div class="photo-card"><img src="https://lh3.googleusercontent.com/d/1x3cLE-65wMSmG9WehenfeyVJ-L-TNPsj" alt="Royal Energy Team"></div>
+<div class="photo-card"><img src="https://i.postimg.cc/W4Tw410B/IMG-20260924-WA0874.jpg" alt="Royal Energy Team"></div>
 <div><span style="background:var(--gold);color:#000;padding:5px 12px;border-radius:20px;font-size:10px;font-weight:900">OUR HOME</span><h3 style="color:var(--gold);font-size:22px;margin:10px 0 6px">ROYAL GROUNDZ KYANUUNA</h3><p style="color:#b6ccb9;font-size:13px;line-height:1.5">Fortress in Buwasa Village, Namayumba, Wakiso. Home of The Energy Boys. 26KM from Kampala.</p><a href="mailto:royalenergy256@gmail.com" style="display:inline-block;margin-top:12px;color:var(--gold);font-weight:900;text-decoration:none;font-size:14px">📧 royalenergy256@gmail.com</a></div>
 </div>
 
-<!-- 2. SQUAD IN ORDER -->
-<div class="section-head" style="margin-top:40px"><p style="color:var(--gold);letter-spacing:3px;font-size:10px;font-weight:900">MEET THE SQUAD</p><h2>Our Team 2026</h2></div>
-<div class="team-grid">
+<div class="team-grid" style="margin-top:18px">
 <div class="photo-card"><img src="https://lh3.googleusercontent.com/d/1Hvc_RKVLduPRD_6h3Uqy5jVqFr_OUk87" alt="Squad"><p class="kit-label">SQUAD 2026</p></div>
-<div class="photo-card"><img src="https://lh3.googleusercontent.com/d/1GIPxAyb_tlhxp1V8c5Au7iaaU2Hsq0xH" alt="Team"><p class="kit-label">TEAM PHOTO</p></div>
+<div class="photo-card"><img src="https://i.postimg.cc/W4Tw410B/IMG-20260924-WA0874.jpg" alt="Team"><p class="kit-label">TEAM PHOTO</p></div>
 </div>
 
-<!-- 3. KITS IN ORDER -->
+<!-- 2. KITS - NEW LINKS IN ORDER -->
 <div class="section-head" style="margin-top:40px"><p style="color:var(--gold);letter-spacing:3px;font-size:10px;font-weight:900">OFFICIAL KITS</p><h2>Our Kits 2026</h2></div>
 <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;max-width:800px;margin:0 auto">
-<div class="photo-card"><img src="https://lh3.googleusercontent.com/d/1H18kJgzueMv960e_F8Xd_fIZ_NZOIRv4" alt="Home Kit"><p class="kit-label">HOME KIT - YELLOW / GREEN</p></div>
-<div class="photo-card"><img src="https://lh3.googleusercontent.com/d/11Hh01TyjoYt1fZ2VFgfdDYehid37OHdw" alt="Away Kit"><p class="kit-label">AWAY KIT - LIME GREEN</p></div>
+<div class="photo-card"><img src="https://i.postimg.cc/9FFNF1Yr/IMG-20260924-WA9341.jpg" alt="Home Kit"><p class="kit-label">HOME KIT - YELLOW / GREEN</p></div>
+<div class="photo-card"><img src="https://i.postimg.cc/d3XdFq9L/IMG-20260924-WA3548.jpg" alt="Away Kit"><p class="kit-label">AWAY KIT</p></div>
 </div>
 </section>
 
@@ -127,8 +125,8 @@ body{background:var(--bg);color:#fff;overflow-x:hidden}
 <h3 style="color:#fff;margin:6px 0 12px;font-size:20px;font-weight:900">Get In Touch</h3>
 <div style="display:flex;flex-direction:column;gap:10px">
 <a class="social-btn email-btn" href="mailto:royalenergy256@gmail.com">📧 royalenergy256@gmail.com</a>
-<a class="social-btn tiktok" href="https://tiktok.com/@royalenergyfc_buwasa1" target="_blank">🎵 TikTok @royalenergyfc_buwasa1</a>
-<a class="social-btn youtube" href="https://youtube.com/@royalenergy_buwasa" target="_blank">▶️ YouTube @royalenergy_buwasa</a>
+<a class="social-btn tiktok" href="https://tiktok.com/@royalenergyfc_buwasa1" target="_blank">🎵 TikTok</a>
+<a class="social-btn youtube" href="https://youtube.com/@royalenergy_buwasa" target="_blank">▶️ YouTube</a>
 <a class="social-btn whatsapp" href="https://whatsapp.com/channel/0029Vb7eslH8vd1URgB8Wl31" target="_blank">💬 WhatsApp Channel</a>
 <a class="social-btn whatsapp-group" href="https://chat.whatsapp.com/DQvOXID1PKb1B6Uo8eu74V" target="_blank">👥 WhatsApp Group</a>
 </div>
@@ -138,4 +136,4 @@ body{background:var(--bg);color:#fff;overflow-x:hidden}
 
 <footer style="text-align:center;padding:18px;background:#08120a;color:#6b8a6e;font-size:11px;border-top:1px solid #1f3a23"><b style="color:var(--gold)">⚡ ROYAL ENERGY FC BUWASA</b><br>📧 royalenergy256@gmail.com • Buwasa, Wakiso • © 2026</footer>
 </body>
-  </html>
+                           </html>
