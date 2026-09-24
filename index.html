@@ -1,120 +1,180 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Royal Energy FC Buwasa</title>
-<link rel="icon" href="https://i.postimg.cc/DWgMNLgt/Royal-Energy-Dream-League-Showdown-1.png">
-<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700;900&display=swap" rel="stylesheet">
-<style>
-*{margin:0;padding:0;box-sizing:border-box;font-family:'Outfit',sans-serif}
-:root{--gold:#FFD700;--green:#0a7a2f;--black:#050505}
-body{background:var(--black);color:#fff}
-.nav{position:sticky;top:0;z-index:99;background:#050505;border-bottom:2px solid var(--gold);display:flex;justify-content:space-between;align-items:center;padding:10px 16px}
-.brand{display:flex;align-items:center;gap:8px;text-decoration:none;color:#fff;font-weight:900;font-size:13px}
-.brand img{width:40px;height:40px;border-radius:50%;border:2px solid var(--gold)}
-.hero{padding:36px 16px 40px;text-align:center;background:radial-gradient(800px 400px at 50% 0%, rgba(255,215,0,0.25), transparent 70%), #050505}
-.eyebrow{display:inline-block;border:1px solid rgba(255,215,0,0.4);color:var(--gold);padding:6px 14px;border-radius:20px;font-size:9px;letter-spacing:2px;font-weight:900;margin-bottom:20px}
-.hero-row{display:flex;align-items:center;justify-content:center;gap:16px;margin-bottom:12px}
-.hero-row img{width:100px;height:100px;border-radius:50%;border:3px solid var(--gold);box-shadow:0 0 30px rgba(255,215,0,0.5);background:#000;flex-shrink:0}
-.hero-row h1{text-align:left;font-size:38px;line-height:0.9;font-weight:900}
-.hero-row h1 span{color:var(--gold);display:block}
-.btn{padding:12px 24px;border-radius:30px;text-decoration:none;font-weight:900;font-size:13px;display:inline-block;margin:4px}
-.btn.gold{background:var(--gold);color:#000}
-.btn.out{border:2px solid var(--gold);color:var(--gold)}
-.score{margin:20px auto 0;max-width:340px;background:#111;border:1px solid rgba(255,215,0,0.25);border-radius:16px;padding:12px}
-/* BEAUTIFUL FIXTURES */
-.fixtures{background:#0a0a0a;padding:36px 14px}
-.fixtures h2{text-align:center;font-size:28px;font-weight:900;margin-bottom:6px}
-.fixtures p.sub{text-align:center;color:#777;font-size:12px;margin-bottom:22px}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:14px;max-width:1100px;margin:0 auto}
-.card{background:linear-gradient(180deg,#181818,#0f0f0f);border:1px solid #222;border-radius:18px;overflow:hidden}
-.card.next{border:1.5px solid var(--gold);box-shadow:0 0 25px rgba(255,215,0,0.18)}
-.card.done{border-color:rgba(255,215,0,0.4)}
-.top{display:flex;justify-content:space-between;padding:10px 14px;background:#0c0c0c;border-bottom:1px solid #1c1c1c;font-size:10px;font-weight:800}
-.top b{color:var(--gold);letter-spacing:1px}
-.top span{color:#666;background:#000;padding:3px 8px;border-radius:10px;border:1px solid #222}
-.body{padding:16px;text-align:center}
-.teams{display:flex;justify-content:space-between;align-items:center}
-.team{flex:1}
-.logo{width:44px;height:44px;border-radius:50%;background:#000;border:2px solid #222;margin:0 auto 5px;display:flex;align-items:center;justify-content:center}
-.name{font-size:11px;font-weight:800}
-.vs{width:32px;height:32px;background:var(--gold);color:#000;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:10px;flex-shrink:0}
-.info{color:#666;font-size:11px;margin-top:10px}
-.foot{padding:9px;background:#000;text-align:center}
-.tag{padding:5px 12px;border-radius:20px;font-size:10px;font-weight:900;display:inline-block}
-.tag.win{background:var(--gold);color:#000}
-.tag.home{background:#000;color:var(--gold);border:1px solid var(--gold)}
-.tag.away{background:#111;color:#888;border:1px solid #222}
-@media(max-width:500px){.hero-row img{width:80px;height:80px}.hero-row h1{font-size:30px}}
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Royal Energy FC Buwasa - Official Club Wakiso Uganda</title>
+  <meta name="description" content="Royal Energy FC Buwasa official club in Buwasa Village, Namayumba Town Council, Wakiso District, Hoima Road. Follow on TikTok, YouTube, WhatsApp.">
+  <link rel="icon" type="image/png" href="https://i.postimg.cc/DWgMNLgt/Royal-Energy-Dream-League-Showdown-1.png">
+  <link rel="stylesheet" href="style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SportsTeam",
+    "name": "Royal Energy FC Buwasa",
+    "sameAs": [
+      "https://tiktok.com/@royalenergyfc_buwasa1",
+      "https://youtube.com/@royalenergy_buwasa",
+      "https://whatsapp.com/channel/0029Vb7eslH8vd1URgB8Wl31",
+      "https://chat.whatsapp.com/DQvOXID1PKb1B6Uo8eu74V"
+    ],
+    "location": {
+      "@type": "Place",
+      "name": "Royal Groundz Kyanuuna",
+      "address": {
+        "addressLocality": "Namayumba",
+        "addressRegion": "Wakiso District",
+        "streetAddress": "Buwasa Village, Hoima Road",
+        "addressCountry": "UG"
+      }
+    }
+  }
+  </script>
+  <style>
+  html { scroll-behavior: smooth; }
+ .nav { position: sticky; top: 0; z-index: 9999; background:rgba(5,5,5,0.97); backdrop-filter:blur(15px); border-bottom:2px solid #FFD700; display:flex; justify-content:space-between; align-items:center; padding:10px 16px }
+  section[id] { scroll-margin-top: 95px; }
+ .photo-card img,.gallery img { width: 100%; max-width: 650px; height: auto; display: block; margin: 0 auto; object-fit: contain; border-radius: 16px; }
+ .gallery { text-align: center; }
+ .bottom-section { background:#0a0a0a; border-top:3px solid #ffd700; padding:30px 15px; }
+ .bottom-grid { display:grid; grid-template-columns:1fr 1fr; gap:24px; max-width:1100px; margin:0 auto; }
+ .map-compact { border-radius:12px; overflow:hidden; border:1.5px solid #ffd700; margin-top:10px; height:230px; }
+ .map-compact iframe { width:100%; height:100%; border:0; }
+ .social-btn { display:inline-flex; align-items:center; gap:8px; padding:12px 18px; border-radius:30px; text-decoration:none; font-weight:700; font-size:13px; color:#fff; justify-content:center }
+ .tiktok { background:#000; border:1px solid #333; }
+ .youtube { background:#FF0000; }
+ .whatsapp { background:#25D366; }
+ .whatsapp-group { background:#128C7E; }
+ .open-maps { display:inline-block; background:#fff; color:#1a73e8; padding:6px 12px; border-radius:6px; font-size:12px; font-weight:700; text-decoration:none; margin:8px; position:relative; z-index:2; box-shadow:0 2px 5px rgba(0,0,0,0.2); }
+
+  /* ===== FIXES YOU ASKED ===== */
+  /* 1. LOGO + NAME SAME LINE */
+ .hero{padding:36px 16px 40px!important;min-height:auto!important;background:radial-gradient(800px 400px at 50% 0%, rgba(255,215,0,0.25), transparent 70%), #050505!important;text-align:center}
+ .hero-content{max-width:600px;margin:0 auto}
+ .hero.eyebrow{display:inline-block;margin-bottom:20px}
+ .hero-logo{margin:0!important;display:flex;align-items:center;justify-content:center;gap:16px}
+ .hero-logo img{width:105px!important;height:105px!important;border-radius:50%;border:3px solid #FFD700!important;box-shadow:0 0 30px rgba(255,215,0,0.5)!important}
+ .hero h1{display:flex;flex-direction:column;text-align:left;line-height:0.9;font-size:38px!important;margin:0!important}
+ .hero-row{display:flex;align-items:center;justify-content:center;gap:16px;margin:0 auto 12px}
+ .lead{margin:14px auto 20px!important}
+
+  /* 2. BEAUTIFUL FIXTURES - NO SYMBOLS */
+ .fixture-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px;max-width:1100px;margin:0 auto}
+ .fixture{background:linear-gradient(180deg,#181818,#101010)!important;border:1px solid #222!important;border-radius:18px!important;padding:0!important;overflow:hidden;transition:0.3s}
+ .fixture:hover{transform:translateY(-4px);border-color:#FFD700!important;box-shadow:0 12px 30px rgba(255,215,0,0.15)}
+ .fixture.next{border:1.5px solid #FFD700!important;background:linear-gradient(180deg,#1c1a00,#111100)!important;box-shadow:0 0 25px rgba(255,215,0,0.18)!important}
+ .fixture.done{border-color:rgba(255,215,0,0.4)!important}
+ .fixture.match-no{display:flex;justify-content:space-between;align-items:center;padding:10px 14px;background:#0c0c0c;border-bottom:1px solid #1e1e1e;width:100%;font-size:10px;letter-spacing:1px;color:#FFD700;font-weight:900}
+ .fixture.date{background:#000;color:#777;padding:3px 10px;border-radius:12px;border:1px solid #222;font-size:10px;margin-left:auto}
+ .fixture h3{padding:20px 14px 6px;text-align:center;font-size:15px!important;font-weight:800;display:flex;justify-content:space-between;align-items:center;gap:10px}
+ .fixture h3 span{width:36px;height:36px;background:#FFD700;color:#000;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:11px;flex-shrink:0}
+ .fixture p{color:#666!important;font-size:11px!important;text-align:center;padding-bottom:8px}
+ .fixture.result,.fixture.kick{display:block;margin:12px auto;text-align:center;width:fit-content;padding:6px 16px;border-radius:20px;font-size:11px;font-weight:900}
+ .fixture.result{background:#FFD700;color:#000}
+ .fixture.kick{background:#000;color:#FFD700;border:1px solid #FFD700}
+
+  /* 3. BOTTOM NOT IN LINE ON MOBILE */
+  @media(max-width:700px){
+   .bottom-grid{grid-template-columns:1fr!important;gap:32px!important}
+   .hero-logo img{width:82px!important;height:82px!important}
+   .hero h1{font-size:30px!important}
+   .hero-row{flex-direction:row!important}
+  }
+  </style>
 </head>
 <body>
 <header class="nav">
-<a class="brand" href="#"><img src="https://i.postimg.cc/DWgMNLgt/Royal-Energy-Dream-League-Showdown-1.png">ROYAL<br>ENERGY FC</a>
+  <a class="brand" href="#home"><span class="crest"><img src="https://i.postimg.cc/DWgMNLgt/Royal-Energy-Dream-League-Showdown-1.png" alt="Royal Energy FC Buwasa"></span><span>ROYAL ENERGY FC</span></a>
+  <button class="menu" aria-label="Open menu">☰</button>
+  <nav><a href="#home">Home</a><a href="#club">Club</a><a href="#fixtures">Fixtures</a><a href="#contact">Contact</a><a href="#bottom">Platforms & Location</a></nav>
 </header>
-
-<section class="hero">
-<div class="eyebrow">S. FOUNDATION DREAM LEAGUE 2026 - WAKISO</div>
-<div class="hero-row">
-<img src="https://i.postimg.cc/DWgMNLgt/Royal-Energy-Dream-League-Showdown-1.png">
-<h1>ROYAL<br><span>ENERGY FC</span></h1>
-</div>
-<p style="color:#999;font-size:13px;margin:10px auto 18px;max-width:360px">Buwasa Village, Namayumba, Wakiso - Hoima Road</p>
-<div><a class="btn gold" href="#fixtures">View Fixtures</a><a class="btn out" href="#loc">Find Us</a></div>
-<div class="score"><small style="color:var(--gold);font-size:9px;letter-spacing:2px;font-weight:900">LAST RESULT</small><div style="margin:5px 0;font-weight:900">BUKONDO FC <b style="color:var(--gold)">2</b> — <b style="color:var(--gold)">3</b> ROYAL ENERGY FC</div><small style="color:#666;font-size:11px">🏆 WIN - Group B</small></div>
+<main>
+<section id="home" class="hero">
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <p class="eyebrow">S. FOUNDATION DREAM LEAGUE 2026 - WAKISO</p>
+    <!-- LOGO + NAME SAME LINE -->
+    <div class="hero-row">
+      <div class="hero-logo"><img src="https://i.postimg.cc/DWgMNLgt/Royal-Energy-Dream-League-Showdown-1.png" alt="Royal Energy FC Buwasa"></div>
+      <h1>ROYAL<br><span style="color:#FFD700">ENERGY FC</span></h1>
+    </div>
+    <p class="lead">Buwasa Village, Namayumba Town Council, Wakiso District - Hoima Road</p>
+    <div class="hero-actions"><a class="btn primary" href="#fixtures">View Fixtures</a><a class="btn ghost" href="#bottom">Find Us</a></div>
+    <div class="score-card"><small>LAST RESULT</small><strong>BUKONDO FC <b>2</b> — <b>3</b> ROYAL ENERGY FC</strong><span>Dream League Group B</span></div>
+  </div>
 </section>
 
-<section id="fixtures" class="fixtures">
-<h2>Group B Fixtures</h2>
-<p class="sub">S. Foundation Dream League 2026 - All 6 Matches</p>
-<div class="grid">
-
-<div class="card done">
-<div class="top"><b>MATCH 1 • FT</b><span>12 SEP 2026</span></div>
-<div class="body"><div class="teams"><div class="team"><div class="logo">🔵</div><div class="name">BUKONDO FC</div></div><div class="vs">2-3</div><div class="team"><div class="logo" style="border-color:var(--gold)">⚡</div><div class="name" style="color:var(--gold)">ROYAL ENERGY</div></div></div><div class="info">📍 Bukondo Ground</div></div>
-<div class="foot"><span class="tag win">WIN ⚡ 2-3</span></div>
-</div>
-
-<div class="card next">
-<div class="top"><b style="background:var(--gold);color:#000;padding:2px 8px;border-radius:8px">NEXT • HOME</b><span style="color:var(--gold);border-color:var(--gold)">27 SEP 4:00 PM</span></div>
-<div class="body"><div class="teams"><div class="team"><div class="logo" style="border-color:var(--gold)">⚡</div><div class="name" style="color:var(--gold)">ROYAL ENERGY</div></div><div class="vs">VS</div><div class="team"><div class="logo">🔴</div><div class="name">LUKOMA FC</div></div></div><div class="info">📍 Royal Groundz Kyanuuna, Buwasa</div></div>
-<div class="foot"><span class="tag home">🔥 COME SUPPORT</span></div>
-</div>
-
-<div class="card">
-<div class="top"><b>MATCH 3</b><span>17 OCT 2026</span></div>
-<div class="body"><div class="teams"><div class="team"><div class="logo">🟣</div><div class="name">UNITED SPARROWS</div></div><div class="vs">VS</div><div class="team"><div class="logo" style="border-color:var(--gold)">⚡</div><div class="name">ROYAL ENERGY</div></div></div><div class="info">📍 Venue TBC</div></div>
-<div class="foot"><span class="tag away">AWAY • UPCOMING</span></div>
-</div>
-
-<div class="card">
-<div class="top"><b>MATCH 4</b><span>31 OCT 2026</span></div>
-<div class="body"><div class="teams"><div class="team"><div class="logo">🟣</div><div class="name">UNITED SPARROWS</div></div><div class="vs">VS</div><div class="team"><div class="logo" style="border-color:var(--gold)">⚡</div><div class="name">ROYAL ENERGY</div></div></div><div class="info">📍 Venue TBC</div></div>
-<div class="foot"><span class="tag away">AWAY • UPCOMING</span></div>
-</div>
-
-<div class="card">
-<div class="top"><b>MATCH 5</b><span>15 NOV 2026</span></div>
-<div class="body"><div class="teams"><div class="team"><div class="logo" style="border-color:var(--gold)">⚡</div><div class="name" style="color:var(--gold)">ROYAL ENERGY</div></div><div class="vs">VS</div><div class="team"><div class="logo">🔵</div><div class="name">BUKONDO FC</div></div></div><div class="info">📍 Royal Groundz - HOME</div></div>
-<div class="foot"><span class="tag home">HOME GAME</span></div>
-</div>
-
-<div class="card">
-<div class="top"><b>MATCH 6</b><span>21 NOV 2026</span></div>
-<div class="body"><div class="teams"><div class="team"><div class="logo">🔴</div><div class="name">LUKOMA FC</div></div><div class="vs">VS</div><div class="team"><div class="logo" style="border-color:var(--gold)">⚡</div><div class="name">ROYAL ENERGY</div></div></div><div class="info">📍 Venue TBC</div></div>
-<div class="foot"><span class="tag away">AWAY • FINAL GROUP</span></div>
-</div>
-
-</div>
+<section id="club" class="section">
+  <div class="section-head"><p class="eyebrow">THE ENERGY BOYS</p><h2>Welcome to Royal Kingdom</h2><p><strong>Royal Energy FC Buwasa</strong> in <strong>Buwasa Village, Namayumba Town Council, Wakiso District, Hoima Road</strong>.</p></div>
+  <div class="about-grid">
+    <div class="photo-card"><img src="./images/team-hd.jpg" alt="Royal Energy FC Buwasa Team" loading="lazy"></div>
+    <div class="about-copy"><span class="tag">OUR HOME</span><h3>ROYAL GROUNDZ KYANUUNA</h3><p>Fortress in Buwasa Village, Namayumba, Wakiso.</p></div>
+  </div>
+  <div class="section-head" style="margin-top:40px"><p class="eyebrow">OFFICIAL KITS</p><h2>Our Kits 2026</h2></div>
+  <div style="display:grid; grid-template-columns:1fr 1fr 1fr; gap:15px; max-width:1100px; margin:20px auto;">
+    <div class="photo-card"><img src="./images/home-kit.jpg" alt="Home Kit"><p style="text-align:center; font-weight:700; margin-top:8px;">HOME KIT</p></div>
+    <div class="photo-card"><img src="./images/away-kit-1.jpg" alt="Away Kit 1"><p style="text-align:center; font-weight:700; margin-top:8px;">AWAY KIT 1</p></div>
+    <div class="photo-card"><img src="./images/away-kit-2.jpg" alt="Away Kit 2"><p style="text-align:center; font-weight:700; margin-top:8px;">AWAY KIT 2</p></div>
+  </div>
 </section>
 
-<section id="loc" style="background:#000;border-top:3px solid var(--gold);padding:30px 14px">
-<div style="max-width:1100px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:20px">
-<div><p style="color:var(--gold);font-size:10px;letter-spacing:2px;font-weight:900">FIND US</p><h3 style="margin:6px 0">Royal Groundz Kyanuuna</h3><p style="color:#777;font-size:13px">Buwasa Village, Wakiso - Hoima Road</p><div style="margin-top:12px;border:1.5px solid var(--gold);border-radius:14px;overflow:hidden;height:220px"><iframe src="https://www.google.com/maps?q=Royal+Energy+Ltd+Uganda+Namayumba+Wakiso&z=15&output=embed" style="width:100%;height:100%;border:0"></iframe></div></div>
-<div><p style="color:var(--gold);font-size:10px;letter-spacing:2px;font-weight:900">FOLLOW US</p><h3 style="margin:6px 0 12px">Follow The Energy Boys</h3><div style="display:flex;flex-direction:column;gap:8px"><a href="https://tiktok.com/@royalenergyfc_buwasa1" target="_blank" style="background:#111;border:1px solid #222;padding:12px;border-radius:12px;text-align:center;color:#fff;text-decoration:none;font-weight:800;font-size:13px">🎵 TikTok</a><a href="https://youtube.com/@royalenergy_buwasa" target="_blank" style="background:#111;border:1px solid #222;padding:12px;border-radius:12px;text-align:center;color:#fff;text-decoration:none;font-weight:800;font-size:13px">▶️ YouTube</a><a href="https://whatsapp.com/channel/0029Vb7eslH8vd1URgB8Wl31" target="_blank" style="background:#111;border:1px solid #222;padding:12px;border-radius:12px;text-align:center;color:#fff;text-decoration:none;font-weight:800;font-size:13px">💬 WhatsApp Channel</a></div></div>
-</div>
+<section id="fixtures" class="section dark">
+  <div class="section-head"><p class="eyebrow">DREAM LEAGUE</p><h2>Group B Fixtures</h2><p style="color:#777;font-size:12px">S. Foundation Dream League 2026 - 6 Matches</p></div>
+  <div class="fixture-grid">
+    <article class="fixture done"><span class="match-no">MATCH 1 • FT<div class="date">12 SEP 2026</div></span><h3>BUKONDO FC <span>2-3</span> ROYAL ENERGY</h3><p>📍 Bukondo Ground</p><b class="result">WIN ⚡ 2-3</b></article>
+    <article class="fixture next"><span class="match-no">NEXT MATCH • HOME<div class="date">27 SEP • 4PM</div></span><h3>ROYAL ENERGY <span>VS</span> LUKOMA FC</h3><p>📍 Royal Groundz Kyanuuna, Buwasa</p><b class="kick">🔥 HOME GAME</b></article>
+    <article class="fixture"><span class="match-no">MATCH 3<div class="date">17 OCT 2026</div></span><h3>UNITED SPARROWS <span>VS</span> ROYAL ENERGY</h3><p>📍 Venue TBC</p><b class="kick" style="background:#111;color:#888;border-color:#222">UPCOMING • AWAY</b></article>
+    <article class="fixture"><span class="match-no">MATCH 4<div class="date">31 OCT 2026</div></span><h3>UNITED SPARROWS <span>VS</span> ROYAL ENERGY</h3><p>📍 Venue TBC</p><b class="kick" style="background:#111;color:#888;border-color:#222">UPCOMING • AWAY</b></article>
+    <article class="fixture"><span class="match-no">MATCH 5<div class="date">15 NOV 2026</div></span><h3>ROYAL ENERGY <span>VS</span> BUKONDO FC</h3><p>📍 Royal Groundz Kyanuuna</p><b class="kick">HOME GAME</b></article>
+    <article class="fixture"><span class="match-no">MATCH 6<div class="date">21 NOV 2026</div></span><h3>LUKOMA FC <span>VS</span> ROYAL ENERGY</h3><p>📍 Venue TBC</p><b class="kick" style="background:#111;color:#888;border-color:#222">FINAL GROUP</b></article>
+  </div>
 </section>
-<footer style="text-align:center;padding:16px;background:#000;color:#444;font-size:11px;border-top:1px solid #111"><b style="color:var(--gold)">⚡ ROYAL ENERGY FC BUWASA</b><br>© 2026</footer>
+
+<section id="contact" class="section contact">
+  <div><p class="eyebrow">CONTACT</p><h2>Royal Energy FC Buwasa</h2><p>Buwasa Village, Namayumba Town Council, Wakiso District.</p></div>
+  <div class="contact-card"><b>CHAIRMAN</b><strong>MR. MULONDO BENSWERI</strong><a href="tel:+256702002257">+256 702 002257</a></div>
+  <div class="contact-card"><b>MANAGER</b><strong>SIMON</strong><a href="tel:+256772433205">+256 772 433205</a></div>
+  <div class="media-card"><b>POWERED BY</b><strong>BUSAGWA ROYAL ENERGY MEDIA</strong><a href="tel:+256740736550">0740 736550</a></div>
+</section>
+
+<section id="bottom" class="bottom-section">
+  <div class="bottom-grid">
+    <div>
+      <p class="eyebrow" style="color:#ffd700; font-size:11px; margin:0">FIND US</p>
+      <h3 style="color:#fff; margin:5px 0 8px; font-size:18px">Royal Groundz Kyanuuna</h3>
+      <p style="color:#aaa; font-size:13px; line-height:1.5; margin:0">
+        Buwasa Village<br>
+        Namayumba Town Council<br>
+        Wakiso District<br>
+        Hoima Road, Central Uganda<br>
+        26KM from Kampala
+      </p>
+      <div class="map-compact" style="position:relative">
+        <div style="position:absolute; top:0; left:0; z-index:2">
+          <a class="open-maps" href="https://www.google.com/maps/search/?api=1&query=Royal+Energy+Ltd+Uganda+Namayumba" target="_blank">Open in Maps ↗</a>
+        </div>
+        <iframe src="https://www.google.com/maps?q=Royal+Energy+Ltd+Uganda+Namayumba+Wakiso&z=15&output=embed" loading="lazy" title="Royal Energy Ltd Uganda Namayumba"></iframe>
+      </div>
+      <div style="text-align:center; margin-top:12px">
+        <a class="social-btn" href="https://www.google.com/maps/search/?api=1&query=Royal+Energy+Ltd+Uganda+Namayumba+Wakiso" target="_blank" style="background:#1a73e8; border-radius:20px; padding:10px 22px; font-size:13px">📍 Open in Google Maps</a>
+      </div>
+    </div>
+    <div>
+      <p class="eyebrow" style="color:#ffd700; font-size:11px; margin:0">FOLLOW US - PLATFORMS</p>
+      <h3 style="color:#fff; margin:5px 0 12px; font-size:18px">Follow The Energy Boys</h3>
+      <div style="display:flex; flex-direction:column; gap:10px">
+        <a class="social-btn tiktok" href="https://tiktok.com/@royalenergyfc_buwasa1" target="_blank">🎵 TikTok</a>
+        <a class="social-btn youtube" href="https://youtube.com/@royalenergy_buwasa?si=pvZSqLqMD3R9hEyA" target="_blank">▶️ YouTube</a>
+        <a class="social-btn whatsapp" href="https://whatsapp.com/channel/0029Vb7eslH8vd1URgB8Wl31" target="_blank">💬 WhatsApp Channel</a>
+        <a class="social-btn whatsapp-group" href="https://chat.whatsapp.com/DQvOXID1PKb1B6Uo8eu74V" target="_blank">👥 WhatsApp Group</a>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+<footer style="text-align:center; padding:20px; background:#000; color:#666; font-size:12px; border-top:1px solid #222">
+  <b style="color:#fff">⚡ ROYAL ENERGY FC BUWASA - WAKISO</b><br>Buwasa Village, Namayumba, Wakiso - Hoima Road<br>© 2026 Royal Energy FC Buwasa
+</footer>
+<script src="script.js"></script>
 </body>
-                                                                                                                               </html>
+                                                                                                                                                                                                             </html>
