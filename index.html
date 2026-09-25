@@ -14,8 +14,8 @@
 :root{--gold:#FFD700;--bg:#0f1f13;--bg2:#0b1a0f;--card:#172b1a;--card2:#1a2f1e;--text:#fff;--muted:#a8c0ae;--border:#2a4a2e;--nav:rgba(12,30,16,0.97)}
 [data-theme="light"]{--bg:#f6f7f3;--bg2:#ffffff;--card:#ffffff;--card2:#f0f2eb;--text:#0f1f13;--muted:#5a6e5e;--border:#d8e0d5;--nav:rgba(255,255,255,0.95)}
 html{scroll-behavior:smooth}
-body{background:var(--bg);color:var(--text);transition:0.3s}
-.nav{position:sticky;top:0;z-index:9999;background:var(--nav);backdrop-filter:blur(20px);border-bottom:2px solid var(--gold);display:flex;justify-content:space-between;align-items:center;padding:10px 14px}
+body{background:var(--bg);color:var(--text);overflow-x:hidden;transition:background 0.3s,color 0.3s}
+.nav{position:sticky;top:0;z-index:9999;background:var(--nav);backdrop-filter:blur(20px);border-bottom:2px solid var(--gold);display:flex;justify-content:space-between;align-items:center;padding:10px 14px;flex-wrap:wrap;gap:8px}
 .brand{display:flex;align-items:center;gap:8px;text-decoration:none;color:var(--text);font-weight:900;font-size:13px}
 .brand img{width:42px;height:42px;border-radius:50%;border:2px solid var(--gold)}
 .nav nav{display:flex;align-items:center;gap:10px}
@@ -56,6 +56,7 @@ body{background:var(--bg);color:var(--text);transition:0.3s}
 .player-grid b{color:var(--text)}
 .scorer-list{max-width:600px;margin:0 auto;background:var(--card);border:1px solid var(--border);border-radius:18px;overflow:hidden}
 .scorer-item{display:flex;justify-content:space-between;padding:12px 16px;border-bottom:1px solid var(--border);font-size:13px}
+.scorer-item:last-child{border:0}
 .scorer-item.top{background:rgba(255,215,0,0.1)}
 .history-table{max-width:900px;margin:0 auto;background:var(--card);border:1px solid var(--border);border-radius:18px;overflow:hidden}
 .history-row{display:grid;grid-template-columns:40px 1fr 80px;gap:8px;padding:10px 12px;border-bottom:1px solid var(--border);font-size:11px;align-items:center}
@@ -242,12 +243,12 @@ body{background:var(--bg);color:var(--text);transition:0.3s}
 </footer>
 
 <script>
-const themeBtn=document.getElementById('themeBtn');
+const btn=document.getElementById('themeBtn');
 const saved=localStorage.getItem('royal-theme');
 if(saved)document.documentElement.setAttribute('data-theme',saved);else document.documentElement.setAttribute('data-theme','dark');
 updateIcon();
 function toggleTheme(){const cur=document.documentElement.getAttribute('data-theme');const next=cur==='dark'?'light':'dark';document.documentElement.setAttribute('data-theme',next);localStorage.setItem('royal-theme',next);updateIcon();}
-function updateIcon(){const cur=document.documentElement.getAttribute('data-theme');themeBtn.textContent=cur==='dark'?'🌙':'☀️';}
+function updateIcon(){const cur=document.documentElement.getAttribute('data-theme');btn.textContent=cur==='dark'?'🌙':'☀️';}
 </script>
 </body>
-                          </html>
+  </html>
