@@ -11,10 +11,10 @@
 :root{--gold:#FFD700;--bg:#0f1f13;--bg3:#0b1a0f}
 html{scroll-behavior:smooth}
 body{background:var(--bg);color:#fff;overflow-x:hidden}
-.nav{position:sticky;top:0;z-index:9999;background:rgba(12,30,16,0.97);backdrop-filter:blur(20px);border-bottom:2px solid var(--gold);display:flex;justify-content:space-between;align-items:center;padding:10px 16px}
+.nav{position:sticky;top:0;z-index:9999;background:rgba(12,30,16,0.97);backdrop-filter:blur(20px);border-bottom:2px solid var(--gold);display:flex;justify-content:space-between;align-items:center;padding:10px 16px;flex-wrap:wrap;gap:8px}
 .brand{display:flex;align-items:center;gap:8px;text-decoration:none;color:#fff;font-weight:900;font-size:13px}
 .brand img{width:42px;height:42px;border-radius:50%;border:2px solid var(--gold)}
-.nav nav a{color:#c5d6c8;text-decoration:none;margin-left:14px;font-size:12px;font-weight:700}
+.nav nav a{color:#c5d6c8;text-decoration:none;margin-left:12px;font-size:11px;font-weight:700}
 .hero{padding:16px 16px 36px;text-align:center;background:radial-gradient(900px 500px at 50% -10%, rgba(255,215,0,0.28), transparent 60%),linear-gradient(180deg, #172e1c 0%, var(--bg) 100%)}
 .hero-content{max-width:600px;margin:0 auto}
 .eyebrow{display:inline-block;background:rgba(255,215,0,0.15);border:1px solid rgba(255,215,0,0.35);color:var(--gold);padding:7px 16px;border-radius:20px;font-size:9px;letter-spacing:2px;font-weight:900;margin:0 0 18px 0}
@@ -37,6 +37,24 @@ body{background:var(--bg);color:#fff;overflow-x:hidden}
 .kit-label{text-align:center;font-weight:900;margin-top:10px;color:var(--gold);font-size:12px;letter-spacing:1px}
 .about-grid{display:grid;grid-template-columns:1.1fr 0.9fr;gap:18px;max-width:1100px;margin:0 auto;align-items:center}
 .team-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;max-width:1100px;margin:0 auto}
+.stat-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;max-width:900px;margin:0 auto 20px}
+.stat-card{background:#1a2f1e;border:1px solid #2a4a2e;border-radius:16px;padding:14px;text-align:center}
+.stat-card h3{font-size:28px;color:var(--gold);font-weight:900}
+.stat-card p{font-size:10px;color:#8aa68e;letter-spacing:1px;font-weight:900;margin-top:4px}
+.player-card{background:#172b1a;border:1.5px solid var(--gold);border-radius:18px;padding:16px;max-width:500px;margin:0 auto}
+.player-card h3{color:var(--gold);font-size:20px}
+.player-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:10px;font-size:12px;color:#b6ccb9}
+.player-grid b{color:#fff}
+.scorer-list{max-width:600px;margin:0 auto;background:#172b1a;border:1px solid #2a4a2e;border-radius:18px;overflow:hidden}
+.scorer-item{display:flex;justify-content:space-between;padding:12px 16px;border-bottom:1px solid #223d26;font-size:13px}
+.scorer-item:last-child{border:0}
+.scorer-item.top{background:rgba(255,215,0,0.1)}
+.history-table{max-width:900px;margin:0 auto;background:#172b1a;border:1px solid #2a4a2e;border-radius:18px;overflow:hidden}
+.history-row{display:grid;grid-template-columns:40px 1fr 80px;gap:8px;padding:10px 12px;border-bottom:1px solid #223d26;font-size:11px;align-items:center}
+.history-row.header{background:#0f2012;color:var(--gold);font-weight:900;font-size:10px}
+.record-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;max-width:800px;margin:0 auto}
+.record-box{background:#1a2f1e;border:1px solid #2a4a2e;border-radius:14px;padding:12px;text-align:center}
+.record-box b{display:block;color:var(--gold);font-size:16px;margin-top:4px}
 .fixture-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:14px;max-width:1100px;margin:0 auto}
 .fixture{background:#172b1a;border:1px solid #2d4a30;border-radius:18px;overflow:hidden}
 .fixture.next{border:1.5px solid var(--gold)!important;background:linear-gradient(180deg,#2a2400,#1a1f12)!important}
@@ -56,13 +74,13 @@ body{background:var(--bg);color:#fff;overflow-x:hidden}
 .social-btn{display:flex;justify-content:center;align-items:center;gap:8px;padding:12px 18px;border-radius:30px;text-decoration:none;font-weight:700;font-size:13px;color:#fff}
 .tiktok{background:#111;border:1px solid #333}.youtube{background:#c40000}.whatsapp{background:#1a8c3f}.whatsapp-group{background:#0f6b31}.email-btn{background:linear-gradient(180deg,#FFD700,#ffb700);color:#000;font-weight:900}
 .open-maps{display:inline-block;background:#fff;color:#1a73e8;padding:6px 12px;border-radius:6px;font-size:12px;font-weight:700;text-decoration:none;margin:8px;position:relative;z-index:2}
-@media(max-width:700px){.bottom-grid{grid-template-columns:1fr!important}.about-grid,.team-grid{grid-template-columns:1fr}.hero-logo img{width:80px!important;height:80px!important}.hero-row h1{font-size:30px!important}}
+@media(max-width:700px){.bottom-grid{grid-template-columns:1fr!important}.about-grid,.team-grid,.stat-cards,.record-grid{grid-template-columns:1fr 1fr}.hero-logo img{width:80px!important;height:80px!important}.hero-row h1{font-size:30px!important}.history-row{grid-template-columns:30px 1fr 60px;font-size:10px}}
 </style>
 </head>
 <body>
 <header class="nav">
 <a class="brand" href="#home"><img src="https://i.postimg.cc/DWgMNLgt/Royal-Energy-Dream-League-Showdown-1.png">ROYAL ENERGY FC</a>
-<nav><a href="#home">Home</a><a href="#fixtures">Fixtures</a><a href="#bottom">Contact</a></nav>
+<nav><a href="#home">Home</a><a href="#stats">Stats</a><a href="#history">History</a><a href="#fixtures">Fixtures</a><a href="#bottom">Contact</a></nav>
 </header>
 
 <section class="hero" id="home">
@@ -73,26 +91,21 @@ body{background:var(--bg);color:#fff;overflow-x:hidden}
 <h1><b>ROYAL</b><span>ENERGY FC</span></h1>
 </div>
 <p class="lead">Buwasa Village, Namayumba Town Council, Wakiso District - Hoima Road</p>
-<div><a class="btn primary" href="#fixtures">View Fixtures</a><a class="btn ghost" href="mailto:royalenergy256@gmail.com">Email Us</a></div>
-<div class="score-card"><small style="color:var(--gold);letter-spacing:2px;font-size:9px;font-weight:900">LAST RESULT</small><br><strong>BUKONDO FC <b style="color:var(--gold)">2</b> — <b style="color:var(--gold)">3</b> ROYAL ENERGY FC</strong><br><span style="color:#a8c0ae;font-size:11px">🏆 Dream League Group B • WIN</span></div>
+<div><a class="btn primary" href="#fixtures">View Fixtures</a><a class="btn ghost" href="#stats">Our Stats</a></div>
+<div class="score-card"><small style="color:var(--gold);letter-spacing:2px;font-size:9px;font-weight:900">LAST RESULT - DREAM LEAGUE</small><br><strong>BUKONDO FC <b style="color:var(--gold)">2</b> — <b style="color:var(--gold)">3</b> ROYAL ENERGY FC</strong><br><span style="color:#a8c0ae;font-size:11px">🏆 Group B • WIN - First Competitive Game</span></div>
 </div>
 </section>
 
 <section class="section">
 <div class="section-head"><p style="color:var(--gold);letter-spacing:3px;font-size:10px;font-weight:900">THE ENERGY BOYS</p><h2>Welcome to Royal Kingdom</h2></div>
-
-<!-- 1. TEAM PHOTOS - NEW LINKS -->
 <div class="about-grid">
 <div class="photo-card"><img src="https://i.postimg.cc/W4Tw410B/IMG-20260924-WA0874.jpg" alt="Royal Energy Team"></div>
 <div><span style="background:var(--gold);color:#000;padding:5px 12px;border-radius:20px;font-size:10px;font-weight:900">OUR HOME</span><h3 style="color:var(--gold);font-size:22px;margin:10px 0 6px">ROYAL GROUNDZ KYANUUNA</h3><p style="color:#b6ccb9;font-size:13px;line-height:1.5">Fortress in Buwasa Village, Namayumba, Wakiso. Home of The Energy Boys. 26KM from Kampala.</p><a href="mailto:royalenergy256@gmail.com" style="display:inline-block;margin-top:12px;color:var(--gold);font-weight:900;text-decoration:none;font-size:14px">📧 royalenergy256@gmail.com</a></div>
 </div>
-
 <div class="team-grid" style="margin-top:18px">
 <div class="photo-card"><img src="https://lh3.googleusercontent.com/d/1Hvc_RKVLduPRD_6h3Uqy5jVqFr_OUk87" alt="Squad"><p class="kit-label">SQUAD 2026</p></div>
 <div class="photo-card"><img src="https://i.postimg.cc/W4Tw410B/IMG-20260924-WA0874.jpg" alt="Team"><p class="kit-label">TEAM PHOTO</p></div>
 </div>
-
-<!-- 2. KITS - NEW LINKS IN ORDER -->
 <div class="section-head" style="margin-top:40px"><p style="color:var(--gold);letter-spacing:3px;font-size:10px;font-weight:900">OFFICIAL KITS</p><h2>Our Kits 2026</h2></div>
 <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;max-width:800px;margin:0 auto">
 <div class="photo-card"><img src="https://i.postimg.cc/9FFNF1Yr/IMG-20260924-WA9341.jpg" alt="Home Kit"><p class="kit-label">HOME KIT - YELLOW / GREEN</p></div>
@@ -100,10 +113,91 @@ body{background:var(--bg);color:#fff;overflow-x:hidden}
 </div>
 </section>
 
+<!-- NEW: PLAYER PROFILE -->
+<section class="section dark" id="players">
+<div class="section-head"><p style="color:var(--gold);letter-spacing:3px;font-size:10px;font-weight:900">ASSISTANT CAPTAIN</p><h2>Player Profile</h2></div>
+<div class="player-card">
+<h3>TUMUSIME ISAAC</h3><p style="background:var(--gold);color:#000;display:inline-block;padding:2px 10px;border-radius:12px;font-size:10px;font-weight:900;margin-top:4px">ASS CAPTAIN • STRIKER • #10</p>
+<div class="player-grid">
+<div><b>DATE OF BIRTH:</b><br>Not set</div><div><b>AGE:</b><br>-</div>
+<div><b>JOINED:</b><br>2026</div><div><b>CONTRACT:</b><br>3 YRS</div>
+<div><b>STRONG LEG:</b><br>LEFT</div><div><b>WEAK LEG:</b><br>RIGHT</div>
+<div><b>PREVIOUS CLUB:</b><br>BUSUNJU UNITED</div><div><b>SQUAD NO:</b><br>10</div>
+<div><b>GAMES PLAYED:</b><br>13</div><div><b>GOALS SCORED:</b><br>5 GOALS</div>
+</div>
+</div>
+</section>
+
+<!-- NEW: STATISTICS -->
+<section class="section" id="stats">
+<div class="section-head"><p style="color:var(--gold);letter-spacing:3px;font-size:10px;font-weight:900">2026 SEASON</p><h2>Club Statistics</h2></div>
+<div class="stat-cards">
+<div class="stat-card"><h3>21</h3><p>GAMES PLAYED</p></div>
+<div class="stat-card"><h3>8</h3><p>GAMES WON</p></div>
+<div class="stat-card"><h3>10</h3><p>GAMES DRAWN</p></div>
+<div class="stat-card"><h3>3</h3><p>GAMES LOST</p></div>
+<div class="stat-card"><h3>42</h3><p>GOALS SCORED</p></div>
+<div class="stat-card"><h3>35</h3><p>GOALS CONCEDED</p></div>
+</div>
+<div class="record-grid">
+<div class="record-box"><span style="font-size:11px;color:#8aa68e">MOST GAMES PLAYED</span><b>Jordan - 19 Games</b></div>
+<div class="record-box"><span style="font-size:11px;color:#8aa68e">CLEAN SHEETS</span><b>4 Clean Sheets</b></div>
+<div class="record-box"><span style="font-size:11px;color:#8aa68e">YOUNGEST PLAYER</span><b>Allan</b></div>
+<div class="record-box"><span style="font-size:11px;color:#8aa68e">ELDEST PLAYER</span><b>Kityo</b></div>
+<div class="record-box"><span style="font-size:11px;color:#8aa68e">MOST SUB APPEARANCE</span><b>Kityo - 11 Games</b></div>
+<div class="record-box"><span style="font-size:11px;color:#8aa68e">FIRST COMPETITIVE GAME</span><b>Bukondo 2-3 Royal</b></div>
+</div>
+</section>
+
+<!-- NEW: TOP SCORERS -->
+<section class="section dark">
+<div class="section-head"><p style="color:var(--gold);letter-spacing:3px;font-size:10px;font-weight:900">GOAL MACHINE</p><h2>Top Scorers 2026</h2></div>
+<div class="scorer-list">
+<div class="scorer-item top"><span>🥇 <b>Jordan</b></span><span style="color:var(--gold);font-weight:900">11 Goals</span></div>
+<div class="scorer-item top"><span>🥈 <b>Kasule</b></span><span style="color:var(--gold);font-weight:900">8 Goals</span></div>
+<div class="scorer-item top"><span>🥉 <b>Isaac</b> (Ass Captain)</span><span style="color:var(--gold);font-weight:900">5 Goals</span></div>
+<div class="scorer-item"><span>Suubi</span><span>3 Goals</span></div>
+<div class="scorer-item"><span>Suarez</span><span>2 Goals</span></div>
+<div class="scorer-item"><span>Carrick</span><span>2 Goals</span></div>
+<div class="scorer-item"><span>Bisaso</span><span>1 Goal</span></div>
+<div class="scorer-item"><span>Gilbert</span><span>1 Goal</span></div>
+<div class="scorer-item"><span>Yassin</span><span>1 Goal</span></div>
+</div>
+</section>
+
+<!-- NEW: MATCH HISTORY 21 GAMES -->
+<section class="section" id="history">
+<div class="section-head"><p style="color:var(--gold);letter-spacing:3px;font-size:10px;font-weight:900">FULL RECORD</p><h2>21 Games History</h2></div>
+<div class="history-table">
+<div class="history-row header"><span>#</span><span>MATCH</span><span>RESULT</span></div>
+<div class="history-row"><span>1</span><span>Royal 1 vs 3 Namayumba</span><span style="color:#ff6b6b">LOSS</span></div>
+<div class="history-row"><span>2</span><span>Lukwanga 2 vs 2 Royal</span><span style="color:#aaa">DRAW</span></div>
+<div class="history-row"><span>3</span><span>Bembe 0 vs 3 Royal</span><span style="color:var(--gold)">WIN</span></div>
+<div class="history-row"><span>4</span><span>Cream Site 1 vs 4 Royal</span><span style="color:var(--gold)">WIN</span></div>
+<div class="history-row"><span>5</span><span>Royal 1 vs 3 Matte</span><span style="color:#ff6b6b">LOSS</span></div>
+<div class="history-row"><span>6</span><span>Busiro 2 vs 0 Royal</span><span style="color:#ff6b6b">LOSS</span></div>
+<div class="history-row"><span>7</span><span>Royal 2 vs 1 New Generation</span><span style="color:var(--gold)">WIN</span></div>
+<div class="history-row"><span>8</span><span>Busunju 2 vs 0 Royal</span><span style="color:#ff6b6b">LOSS</span></div>
+<div class="history-row"><span>9</span><span>Royal 2 vs 2 Busunju</span><span style="color:#aaa">DRAW</span></div>
+<div class="history-row"><span>10</span><span>Elite 2 vs 0 Royal</span><span style="color:#ff6b6b">LOSS</span></div>
+<div class="history-row"><span>11</span><span>Royal 1 vs 2 Lukoma</span><span style="color:#ff6b6b">LOSS</span></div>
+<div class="history-row"><span>12</span><span>Royal 8 vs 0 Kitula</span><span style="color:var(--gold)">WIN - BIGGEST</span></div>
+<div class="history-row"><span>13</span><span>New Gen 1 vs 2 Royal</span><span style="color:var(--gold)">WIN</span></div>
+<div class="history-row"><span>14</span><span>Wakiso Lands 2 vs 0 Royal</span><span style="color:#ff6b6b">LOSS</span></div>
+<div class="history-row"><span>15</span><span>Royal 2 vs 0 Busunju</span><span style="color:var(--gold)">WIN</span></div>
+<div class="history-row"><span>16</span><span>New Gen 0 vs 0 Royal</span><span style="color:#aaa">DRAW</span></div>
+<div class="history-row"><span>17</span><span>Royal 2 vs 4 Wakiso Lands</span><span style="color:#ff6b6b">LOSS</span></div>
+<div class="history-row"><span>18</span><span>Royal 5 vs 2 PK</span><span style="color:var(--gold)">WIN</span></div>
+<div class="history-row"><span>19</span><span>Bukondo 2 vs 3 Royal ⭐</span><span style="color:var(--gold)">WIN</span></div>
+<div class="history-row"><span>20</span><span>Royal 1 vs 1 Namayumba</span><span style="color:#aaa">DRAW</span></div>
+<div class="history-row"><span>21</span><span>Royal 3 vs 3 Busunju Young</span><span style="color:#aaa">DRAW</span></div>
+</div>
+</section>
+
 <section id="fixtures" class="section dark">
 <div class="section-head"><p style="color:var(--gold);letter-spacing:3px;font-size:10px;font-weight:900">DREAM LEAGUE</p><h2>Group B Fixtures</h2></div>
 <div class="fixture-grid">
-<article class="fixture done"><span class="match-no">MATCH 1 • FT<div class="date">12 SEP 2026</div></span><h3>BUKONDO FC <span>2-3</span> ROYAL ENERGY</h3><p>📍 Bukondo Ground</p><b class="result">WIN ⚡ 2-3</b></article>
+<article class="fixture done"><span class="match-no">MATCH 1 • FT<div class="date">12 SEP 2026</div></span><h3>BUKONDO FC <span>2-3</span> ROYAL ENERGY</h3><p>📍 Bukondo Ground</p><b class="result">WIN ⚡ 2-3 - FIRST COMPETITIVE WIN</b></article>
 <article class="fixture next"><span class="match-no">NEXT MATCH • HOME<div class="date">27 SEP • 4PM</div></span><h3>ROYAL ENERGY <span>VS</span> LUKOMA FC</h3><p>📍 Royal Groundz Kyanuuna, Buwasa</p><b class="kick">🔥 HOME GAME</b></article>
 <article class="fixture"><span class="match-no">MATCH 3<div class="date">17 OCT 2026</div></span><h3>UNITED SPARROWS <span>VS</span> ROYAL ENERGY</h3><p>📍 Venue TBC</p></article>
 <article class="fixture"><span class="match-no">MATCH 4<div class="date">31 OCT 2026</div></span><h3>UNITED SPARROWS <span>VS</span> ROYAL ENERGY</h3><p>📍 Venue TBC</p></article>
@@ -134,6 +228,6 @@ body{background:var(--bg);color:#fff;overflow-x:hidden}
 </div>
 </section>
 
-<footer style="text-align:center;padding:18px;background:#08120a;color:#6b8a6e;font-size:11px;border-top:1px solid #1f3a23"><b style="color:var(--gold)">⚡ ROYAL ENERGY FC BUWASA</b><br>📧 royalenergy256@gmail.com • Buwasa, Wakiso • © 2026</footer>
+<footer style="text-align:center;padding:18px;background:#08120a;color:#6b8a6e;font-size:11px;border-top:1px solid #1f3a23"><b style="color:var(--gold)">⚡ ROYAL ENERGY FC BUWASA</b><br>📧 royalenergy256@gmail.com • Buwasa, Wakiso • © 2026<br>21 Games • 8W 10D 3L • 42 Goals</footer>
 </body>
-                           </html>
+                          </html>
